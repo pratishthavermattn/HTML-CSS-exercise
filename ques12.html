@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .class{
+            float: left;
+            color: aqua;
+            padding: 5px 10px;
+            clear:left
+        }
+
+        .class1{
+            padding: 5px 10px;
+            float: right;
+            color: aqua;
+        }
+
+        .class1 h5{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        hr{
+            clear:both
+        }   
+        
+        div.form{
+            display: block;
+            text-align: center;
+        }
+
+        form{
+            width: 30%;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            border: 2px solid silver;
+            border-radius: 6px 6px 6px 6px;
+
+        }
+
+        header{
+            height: 70px;
+            border: 2px solid silver;
+            background-color:silver;
+            color: white;
+            text-align: left;
+            padding-left: 0.5cm;
+        }
+
+        footer{
+            height: 40px;
+            border-top: 2px solid silver;
+            background-color: whitesmoke;
+        }
+
+        button{
+            border: 2px solid transparent;
+            border-radius: 4px 4px 4px 4px;
+            color: white;
+            background-color: #00cc99;
+            padding-top: 2px;
+            padding-right: 2px;
+            margin-top: 8px;
+            margin-right: 15px;
+        }
+
+        select{
+            width: 325px;
+            color: white;
+            background-color: #00cc99;
+            margin-bottom: 10px;
+            height: 25px;
+            border-color: #00cc99;
+            border-radius: 4px 4px 4px 4px;
+        }
+    </style>
+</head>
+
+<div class="class">
+    <h3>TO THE NEW</h3>
+</div>
+<div class="class1">
+    <h5><a href="www.google.com">Home</a></h5>
+    <h5><a href="www.google.com">Quick Help</a></h5>
+</div>
+<hr>
+
+<body>
+    <div class="form">
+        <form>
+            <header>
+                <div class="h3">
+                    <h3>Bug Report</h3>
+                </div>
+            </header>
+            <div>
+                <label for="Title">Title:*</label>
+                <br>
+                <input class="text" type="text" id="Title" name="Title" required size="43">
+                <br>
+
+                <label for="Description">Description:*</label>
+                <br>
+                <textarea name="description" rows="3" cols="41"></textarea>
+                <br>
+              
+                <label for="Operating System">Operating System:</label>
+                <br>
+                <select class="dropbtn" id="Operating System" name="Operating System">
+                  <option value="Windows XP">Windows XP</option>
+                  <option value="Red Hat Linux">Red Hat Linux</option>
+                  <option value="iOS">iOS</option>
+                  <option value="Ubuntu">Ubuntu</option>
+                </select>
+                <br>
+              
+                <label for="Product">Product:*</label>
+                <br>
+                <select class="dropbtn" id="Product" name="Product">
+                  <option value="Formoid">Formoid</option>
+                </select>
+                <br>
+              
+                <label for="Version">Version:</label>
+                <br>
+                <select class="dropbtn2" id="Version" name="Version">
+                  <option value="Formoid">Formoid</option>
+                </select>
+                <br>
+              
+                <label for="License">License:</label>
+                <br>
+                <input type="radio" id="License" name="License">
+                <label for="License">Free</label>
+                <input type="radio" id="License" name="License">
+                <label for="License">Business</label>
+                <br>
+              
+                <label for="Severity">Severity:</label>
+                <br>
+                <select class="dropbtn" id="Severity" name="Severity">
+                  <option value="Critical">Critical</option>
+                </select>
+                <br>
+              
+                <label for="Attachments">Attachments:</label>
+                <br>
+                <input type="file" id="Attachments" name="Attachments">
+                <br>
+
+            </div>
+            <footer><button style="float: right;"><label for="send" style="padding: 2px; padding-right: 5px;">Send</label></button></footer>
+        </form>
+    </div>
+</body>
+</html>
